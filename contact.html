@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  Contact: Isaac Grunnet
+  Created on:  01/17/20
+  Last edited: 01/20/20
+-->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Stardust Café</h1>
+    </header>
+
+    <nav>
+      <hr />
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+      <hr />
+    </nav>
+
+    <form action="submit.html" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name"><br />
+
+      <label for="email">Last Name:</label><br />
+      <input type="text" id="email" name="email"><br />
+
+      <label for="phone">Phone:</label><br />
+      <input type="text" id="phone" name="phone"><br />
+
+      <label for="inquiry">Reason for Inquiry:</label><br />
+      <select id="inquiry" name="inquiry">
+        <option value="catering" selected>Catering</option>
+        <option value="party">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select><br />
+
+      <label for="info">Additional Information</label><br />
+      <textarea id="info" name="info"></textarea><br />
+
+      <legend>Have you been to the restaurant?</legend>
+      <input type="radio" id="choice1" name="visted" value="no">
+      <label for="choice1">No</label>
+      <input type="radio" id="choice2" name="visted" value="yes">
+      <label for="choice2">Yes</label><br />
+
+      <legend>Best days to contact you:</legend>
+      <input type="checkbox" id="monday" name="contactday" value="monday">
+      <label for="monday">M</label>
+      <input type="checkbox" id="tuesday" name="contactday" value="tuesday">
+      <label for="tuesday">T</label>
+      <input type="checkbox" id="wednesday" name="contactday" value="wednesday">
+      <label for="wednesday">W</label>
+      <input type="checkbox" id="thursday" name="contactday" value="thursday">
+      <label for="wednesday">Th</label>
+      <input type="checkbox" id="friday" name="contactday" value="friday">
+      <label for="friday">F</label><br />
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <footer>
+      <hr />
+      1 Citadel Plaza, Cairo, Egypt 11511<br />
+      02-8230-5772
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+body {
+  height: 100%;
+  background-image: url("../images/stardusthubble.jpg");
+  background-size: 100%;
+}
+
+h1, .h1 {
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-size: 64px;
+}
+
+.menuEntrees table {
+  width=100%;
+  border-spacing: 70px;
+  border-collapse: separate;
+}
+
+.menuEntrees td {
+  color: #eeeeee;
+  background:rgba(23,24,43,0.44);
+  padding: 5px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+table, tr, td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+tr:nth-child(even) td:nth-child(odd), tr:nth-child(odd) td:nth-child(even) {
+}
