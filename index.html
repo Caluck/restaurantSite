@@ -7,36 +7,17 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <title>Stardust Cafe</title>
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
-    h1, footer {
-      vertical-align: middle;
-      text-align: center;
-      font-family: 'Inconsolata', monospace;
-      color: #eeeeee
-    }
-
-    h1 {
-      font-size: 64px;
-    }
-
-    .nav-item {
-      font-size: 22px;
-    }
-
-    footer {
-      font-size: 24px;
-    }
-
     body {
       background: url("images/stardusthubble.jpg") no-repeat center top;
       background-size: cover;
       height: 100%;
+      color: #eeeeee;
       text-shadow:
         0px 0px 2px #3c4c5c,
         -2px -2px 2px #3c4c5c,
@@ -45,10 +26,54 @@
         2px 2px 2px #3c4c5c;
     }
 
-    ABOUT US
+    h1, footer {
+      vertical-align: middle;
+      text-align: center;
+      font-family: 'Inconsolata', monospace;
+    }
 
+    h1 {
+      font-size: 64px;
+    }
 
+    h2, h4 {
+      text-align: center;
+      color: #eeeeee
+    }
 
+    a {
+      font-size: 22px;
+      margin-left: 100px;
+      margin-right: 100px;
+      font-weight: normal;
+    }
+
+    a:visited {
+      color: #bbbbbb;
+    }
+
+    a:hover {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    p {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .jumbotron {
+      text-align: center;
+      background-color: rgba(23,24,43,0.44);
+    }
+
+    .carousel-indicators {
+      bottom: -20px;
+    }
+
+    footer {
+      font-size: 24px;
+    }
 
     </style>
   </head>
@@ -57,15 +82,56 @@
       <h1>Stardust Café</h1>
     </header>
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <ul class="navbar-nav mx-auto">
-        <l1 class="nav-item"><a href="index.html">Home</a></li>
-        <l1 class="nav-item"><a href="menu.html">Menu</a></li>
-        <l1 class="nav-item"><a href="contact.html">Contact Us</a></li>
-      </ul>
+    <nav class="nav nav-pills nav-fill bg-dark">
+      <a class="nav-item nav-link" href="index.html">&#127968;</a>
+      <a class="nav-item nav-link" href="menu.html">MENU</a>
+      <a class="nav-item nav-link" href="contact.html">CONTACT</a>
     </nav>
 
-    <img src="images/shoreline.png" height="150" width="400" />
+    <img alt="The Stardust Cafe" src="images/shoreline.png" height="150" width="400" style="display:block; margin-left: auto; margin-right: auto;" />
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Grand opening!</h1>
+        <p>Come join us at our new location in Gaza!</p>
+      </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <span class="banner-text"><h2>We're opening a new location!</h2><span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <h2>We're rolling out our seasonal menu, with special options for this season.</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <h2>The Drink of the Month is SG Special Brew.</h2>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div><br/ >
+
+    <h4>ABOUT US</h4><br />
+    <p>Aliquam ut nulla odio. Aliquam erat volutpat. Aenean scelerisque dolor non facilisis ultricies. In laoreet nunc eget sollicitudin iaculis. Duis id vulputate nisi, vel tincidunt enim. Cras ac consequat nisi. Aliquam id turpis nec nibh auctor porta. Integer a tortor ullamcorper, vestibulum ligula eget, dignissim dui. Nunc tincidunt condimentum tempus. Morbi fermentum erat sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a facilisis velit. Nulla vulputate arcu sed ipsum facilisis, et accumsan orci lobortis. Nam mattis, elit commodo venenatis maximus, ligula felis consectetur nisl, in rutrum leo lorem quis metus. Aenean in condimentum mauris. Quisque maximus enim tristique nunc aliquet commodo.</p>
 
     <footer>
       <hr />
@@ -73,4 +139,8 @@
       02-8230-5772
     </footer>
   </body>
+  <!-- Load Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </html>

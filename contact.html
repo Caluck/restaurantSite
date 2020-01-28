@@ -10,32 +10,44 @@
     <link rel="stylesheet" href="styles/restaurantStyles.css">
 
     <title>Contact Us</title>
+    <style>
+
+    .form-control:valid {
+      background-color: green;
+    }
+
+    .form-control:invalid {
+      background-color: red;
+    }
+
+    </style>
   </head>
   <body>
     <header>
       <h1>Stardust Café</h1>
     </header>
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <ul class="navbar-nav mx-auto">
-        <l1 class="nav-item"><a href="index.html">Home</a></li>
-        <l1 class="nav-item"><a href="menu.html">Menu</a></li>
-        <l1 class="nav-item"><a href="contact.html">Contact Us</a></li>
-      </ul>
+    <noscript><h1>This page is best viewed with JavaScript enabled!</h1></noscript>
+
+    <nav class="nav nav-pills nav-fill bg-dark">
+      <a class="nav-item nav-link" href="index.html">&#127968;</a>
+      <a class="nav-item nav-link" href="menu.html">MENU</a>
+      <a class="nav-item nav-link" href="contact.html">CONTACT</a>
     </nav>
 
-    <form action="submit.html" method="POST">
+    <form class="needs-validation" novalidate>
       <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name"><br />
+      <input type="text" class="form-control" id="name" placeholder="Name" required><br />
+      <div class="valid-feedback">Valid</div><br />
 
-      <label for="email">Last Name:</label><br />
-      <input type="text" id="email" name="email"><br />
+      <label for="email">Email:</label><br />
+      <input type="text" class="form-control" id="email" placeholder="Email" required><br />
 
       <label for="phone">Phone:</label><br />
-      <input type="text" id="phone" name="phone"><br />
+      <input type="text" class="form-control" id="phone" placeholder="Phone #" required><br />
 
       <label for="inquiry">Reason for Inquiry:</label><br />
-      <select id="inquiry" name="inquiry">
+      <select class="form-control" id="inquiry">
         <option value="catering" selected>Catering</option>
         <option value="party">Private Party</option>
         <option value="feedback">Feedback</option>
@@ -43,7 +55,7 @@
       </select><br />
 
       <label for="info">Additional Information</label><br />
-      <textarea id="info" name="info"></textarea><br />
+      <textarea class="form-control" id="info" name="info"></textarea><br />
 
       <legend>Have you been to the restaurant?</legend>
       <input type="radio" id="choice1" name="visted" value="no">
@@ -63,8 +75,9 @@
       <input type="checkbox" id="friday" name="contactday" value="friday">
       <label for="friday">F</label><br />
 
-      <input type="submit" name="submit" value="Submit">
+      <input class="btn btn-primary btn-sm" type="submit"></input>
     </form>
+
 
     <footer>
       <hr />
@@ -72,4 +85,8 @@
       02-8230-5772
     </footer>
   </body>
+  <!-- Load scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="scripts/formValidation.js"></script>
 </html>

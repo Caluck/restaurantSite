@@ -4,6 +4,7 @@ body {
   background: url("../images/stardusthubble.jpg") no-repeat center top;
   background-size: cover;
   height: 100%;
+  color: #eeeeee;
   text-shadow:
     0px 0px 2px #3c4c5c,
     -2px -2px 2px #3c4c5c,
@@ -12,11 +13,26 @@ body {
     2px 2px 2px #3c4c5c;
 }
 
+a {
+  font-size: 22px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: normal;
+}
+
+a:visited {
+  color: #bbbbbb;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 h1, footer {
   vertical-align: middle;
   text-align: center;
   font-family: 'Inconsolata', monospace;
-  color: #eeeeee
 }
 
 h1 {
@@ -37,12 +53,20 @@ footer {
   border-collapse: separate;
 }
 
-.menuEntrees td {
-  color: #eeeeee;
+.menuBeverages table {
   background:rgba(23,24,43,0.44);
+  margin: 0px auto;
+}
+
+td {
+  color: #eeeeee;
   padding: 5px;
   font-size: 20px;
   line-height: 27px;
+}
+
+.menuEntrees td {
+  background:rgba(23,24,43,0.44);
 }
 
 table, tr, td {
